@@ -1,4 +1,146 @@
 
+.header__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    height: 100vh;
+    text-align: center;
+}
+.header__title {
+    font-weight: 800;
+    font-size: 12.5rem;
+    line-height: 10rem;
+    text-transform: uppercase;
+    color: #FFF;
+    opacity: 0.07;
+    max-width: 467px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.logo img {
+    width: 10rem;
+    margin-bottom: 2em;
+}
+.menu__list {
+    color: #FFF;
+}
+.menu__list span {
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding-top: 6px;
+}
+.header__date {
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.header__date span {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    letter-spacing: 1.4px;
+    color: #FFFFFF;
+}
+.header__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
+    letter-spacing: 1.05px;
+    color: #FFF;
+}
+.header__location::before {
+    content: url('../images/location-icon.svg');
+    margin-right: 0.5rem;
+}
+.header__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.map__point1 {
+    animation: fade-in 0.5s;
+}
+.map__point2 {
+    opacity: 0;
+    animation: fade-in 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.map__point3 {
+    opacity: 0;
+    animation: fade-in 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+.map__point4 {
+    opacity: 0;
+    animation: fade-in 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+.map__point5 {
+    opacity: 0;
+    animation: fade-in 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.map__way {
+    animation: way-animation 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    stroke-dasharray: 560;
+    stroke-dashoffset: 560;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes way-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.header__arrows {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 12.5rem;
+    z-index: 3;
+    animation: arrow-down 4s infinite;
+    animation-delay: 1s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .header__slider {
     overflow: hidden;
     position: relative;
@@ -46,8 +188,8 @@ input[name="header__slider-radio"] {
 .header__slider-navigation {
     display: flex;
     position: absolute;
-    right: 80px;
-    bottom: 31px;
+    right: 5rem;
+    bottom: 2rem;
 }
 .bar {
     cursor: pointer;
