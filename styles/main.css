@@ -6,12 +6,18 @@
 
 :root {
     font-size: calc(5px + 0.6vw);
+    background-color: #171919;
 }
 
 ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.hide {
+    opacity: 0;
+    /* display: none; */
 }
 
 .subtitle-left {

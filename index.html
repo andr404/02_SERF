@@ -88,10 +88,10 @@
             </div>
 
             <div class="header__slider-items">
-                <input type="radio" name="header__slider-radio" id="header__slider-radio1" checked>
+                <input type="radio" name="header__slider-radio" id="header__slider-radio0" checked>
+                <input type="radio" name="header__slider-radio" id="header__slider-radio1">
                 <input type="radio" name="header__slider-radio" id="header__slider-radio2">
                 <input type="radio" name="header__slider-radio" id="header__slider-radio3">
-                <input type="radio" name="header__slider-radio" id="header__slider-radio4">
 
                 <div class="header__slider-item s1">
                     <div class="slider-item__info">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="header__slider-item">
+                <div class="header__slider-item hide">
                     <div class="slider-item__info">
                         <div class="slider-item__info-subtitle subtitle-left">Surf</div>
                         <div class="slider-item__info-title huge-title">South Shore</div>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="header__slider-item">
+                <div class="header__slider-item hide">
                     <div class="slider-item__info">
                         <div class="slider-item__info-subtitle subtitle-left">Surf</div>
                         <div class="slider-item__info-title huge-title">West Shore</div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="header__slider-item">
+                <div class="header__slider-item hide">
                     <div class="slider-item__info">
                         <div class="slider-item__info-subtitle subtitle-left">Surf</div>
                         <div class="slider-item__info-title huge-title">East Shore</div>
@@ -143,28 +143,28 @@
             </div>
 
             <div class="header__slider-navigation">
-                <label class="bar" for="header__slider-radio1">
+                <label class="bar bar-selected" for="header__slider-radio0" onclick="showSlide(0)">
                     <div class="bar__line"></div>
                     <div class="bar__info">
                         <p class="bar__info-number">01</p>
                         <p class="bar__info-name">North Shore</p>
                     </div>
                 </label>
-                <label class="bar" for="header__slider-radio2">
+                <label class="bar" for="header__slider-radio1" onclick="showSlide(1)">
                     <div class="bar__line"></div>
                     <div class="bar__info">
                         <p class="bar__info-number">02</p>
                         <p class="bar__info-name">South Shore</p>
                     </div>
                 </label>
-                <label class="bar" for="header__slider-radio3">
+                <label class="bar" for="header__slider-radio2" onclick="showSlide(2)">
                     <div class="bar__line"></div>
                     <div class="bar__info">
                         <p class="bar__info-number">03</p>
                         <p class="bar__info-name">West Shore</p>
                     </div>
                 </label>
-                <label class="bar" for="header__slider-radio4">
+                <label class="bar" for="header__slider-radio3" onclick="showSlide(3)">
                     <div class="bar__line"></div>
                     <div class="bar__info">
                         <p class="bar__info-number">04</p>
@@ -176,3 +176,4 @@
     </header>
 </body>
 </html>
+<script src="./js/header.js"></script>
