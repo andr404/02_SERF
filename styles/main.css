@@ -1,18 +1,24 @@
+:root {
+    font-size: calc(5px + 0.6vw);
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #171919;
+    text-transform: uppercase;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    font-size: calc(5px + 0.6vw);
-    background-color: #171919;
-}
-
 ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.wrapper {
+    margin-right: 5rem;
 }
 
 .hide {
@@ -57,4 +63,24 @@ ul, li {
     line-height: 5.4rem;
     text-align: right;
     color: #FFF;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main-button span {
+    margin-left: 0.5rem;
+    display: flex;
+    padding: 0.2rem;
+    background-color: #4AF6CD;
+}
+.main-button span::after {
+    content: url('../images/button-arrow.svg');
 }

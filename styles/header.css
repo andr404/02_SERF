@@ -13,7 +13,6 @@
     font-weight: 800;
     font-size: 12.5rem;
     line-height: 10rem;
-    text-transform: uppercase;
     color: #FFF;
     opacity: 0.07;
     max-width: 467px;
@@ -29,6 +28,9 @@
 .menu__list {
     color: #FFF;
 }
+.menu__list a {
+    text-decoration: none;
+}
 .menu__list span {
     display: block;
     margin-bottom: 2rem;
@@ -39,12 +41,12 @@
     text-decoration: none;
     letter-spacing: 3px;
     padding-top: 6px;
+    text-transform: none;
 }
 .header__date {
     font-weight: 800;
     font-size: 4.5rem;
     line-height: 4rem;
-    text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -67,6 +69,7 @@
     line-height: 0.8rem;
     letter-spacing: 1.05px;
     color: #FFF;
+    text-transform: none;
 }
 .header__location::before {
     content: url('../images/location-icon.svg');
@@ -130,8 +133,8 @@
     bottom: 2.5rem;
     left: 12.5rem;
     z-index: 3;
-    animation: arrow-down 4s infinite;
-    animation-delay: 1s;
+    animation: arrow-down 2s infinite;
+    animation-delay: 0.5s;
 }
 @keyframes arrow-down {
     0%{
@@ -223,7 +226,6 @@ input[name="header__slider-radio"] {
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 2.1rem;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
 .bar__info-name {
