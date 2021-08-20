@@ -1,3 +1,5 @@
+const bodyWidth = document.getElementsByTagName('body')[0].offsetWidth;
+
 const dots = document.getElementsByClassName('serf__map-dot');
 
 function setSerfSelectedDot(index) {
@@ -19,10 +21,10 @@ const arrowRight = document.getElementById('serf__slider-arrow-right');
 const slider = document.getElementById('serf__slider-items');
 const sliderItems = document.getElementsByClassName('serf__slider-item');
 
-const MAX_SLIDER_MARGIN_LEFT = -125;
+const ITEMS_ON_PAGE = Math.round(bodyWidth / sliderItems[0].offsetWidth);
+const ITEM_WIDTH_PERCENT = Math.round(sliderItems[0].offsetWidth / bodyWidth * 100);
+const MAX_SLIDER_MARGIN_LEFT = -1 * (ITEM_WIDTH_PERCENT * sliderItems.length - (ITEM_WIDTH_PERCENT * ITEMS_ON_PAGE));
 const MIN_SLIDER_MARGIN_LEFT = 0;
-const ITEMS_ON_PAGE = 4;
-const ITEM_WIDTH_PERCENT = 25;
 
 function setSerfSliderPosition(index) {
     for (let i = 0; i < sliderItems.length; i++) {

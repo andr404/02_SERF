@@ -78,9 +78,43 @@ ul, li {
 .main-button span {
     margin-left: 0.5rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.2rem;
     background-color: #4AF6CD;
 }
 .main-button span::after {
     content: url('../images/button-arrow.svg');
+}
+
+
+.main__title {
+    margin-top: 10rem;
+    position: relative;
+}
+.main__title-bg {
+    font-weight: 800;
+    font-size: 12.5rem;
+    line-height: 10rem;
+    opacity: 0.02;
+    color: #FFF;
+    transform: translateX(-2rem);
+}
+.main__title-text {
+    position: absolute;
+    top: 6rem;
+    left: 15rem;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 10rem;
+    color: #FFF;
+}
+.main__title-text::after {
+    position: absolute;
+    top: 2.4rem;
+    right: 0;
+    content: "";
+    width: 5.2rem;
+    height: 1px;
+    background-color: #4AF6CD;
 }
